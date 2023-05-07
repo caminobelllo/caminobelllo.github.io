@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style/todo.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__header">
+        <div class="title">
+          <h1>TODO List</h1>
+        </div>
+        <hr />
+        <h2 id="currentDate">0000.00.00</h2>
+        <h2 id="clock">00:00:00</h2>
+        <hr />
+      </div>
+
+      <div class="wrapper__body">
+        <div class="appendBox">
+          <form id="todo-form">
+            <input
+              id="todo-input"
+              type="text"
+              placeholder="할 일을 입력하세요."
+            />
+            <input id="submitbtn" type="submit" value="추가하기" />
+          </form>
+        </div>
+        <ul id="todo-list"></ul>
+        <div id="weather">
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/todo.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/weather.js"></script>
+</html>
